@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Sistema de biblioteca - livro</title>
+</head>
+<body>
+
+    <nav>
+        <h1>Bem-vindo</h1>
+        <h2> <a href="#section-livros">Livros </a></h2>
+        <h2> <a href="#section-revistas">Revistas </a></h2>
+        <h2> <a href="#section-usuarios">Usuarios </a></h2>
+
+    </nav>
+
+    <main>
+
+        <h1>Sistema de Biblioteca</h1>
+        
+        <section id="section-livros">
+
+            <div class="div-titulos">
+                <button>Filtrar</button>
+                <h2>LIVROS</h2>
+                <button> ADD LIVRO</button>
+            </div>            
+            <div id="livros-container">
+                <table class="tabela-itemBlicioteca">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Autor</th>
+                            <th>Ano de Publicação</th>
+                            <th>Disponibilidade</th>
+                            <th>Emprestar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="livros-tbody" class="itemBlicioteca-tbody">
+                       
+                    </tbody>
+                </table>            
+            </div>
+            
+        </section>
+        
+        <section id="section-revistas">
+            
+            <div class="div-titulos">
+                <button>Filtrar</button>
+                <h2> REVISTAS</h2>
+                <button> ADD LIVRO</button>
+
+            </div>
+
+            <div id="revistas-container">
+             
+                <table class="tabela-itemBlicioteca">
+                    <thead>
+                        <tr>
+                            <th>Título</th>
+                            <th>Editora</th>
+                            <th>Numeraçao</th>
+                            <th>Ano de Publicação</th>
+                            <th>Disponibilidade</th>
+                            <th>Emprestar</th>
+                        </tr>
+                    </thead>
+                    <tbody id="revistas-tbody"  class="itemBlicioteca-tbody">
+                      
+                    </tbody>
+                </table>            
+            </div>
+            
+        </section>
+        
+    </main>
+
+    <div class="body-add-livros">
+
+        <div class="add-livros">
+ 
+            <h1>ADICIONAR LIVRO</h1>
+
+            <input placeholder="Nome" id="nome" type="text" >
+            <input placeholder="Autor" id="autor" type="text" >
+            <input type="date" >
+            <input placeholder="ISBN" id="nome" type="text" >
+            <input placeholder="Genero" id="nome" type="text" >
+            <div class="area-buttonAdd">
+                <button id="cancelar">Cancelar</button>
+                <button id="adicionar">Adicioanar</button>
+
+            </div>
+            
+        </div>
+
+         <div class="add-revistas">
+ 
+            <h1>ADICIONAR REVISTA</h1>
+
+            <input placeholder="Nome" id="nome" type="text" >
+            <input placeholder="Autor" id="autor" type="text" >
+            <input type="date" >
+            <input placeholder="ISBN" id="nome" type="text" >
+            <input placeholder="Genero" id="nome" type="text" >
+            <div class="area-buttonAdd">
+                <button id="cancelar">Cancelar</button>
+                <button id="adicionar">Adicioanar</button>
+
+            </div>
+            
+        </div>
+
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
